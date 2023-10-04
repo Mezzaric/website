@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/mpeg" href="media/Pictures/aleks_small.png">
+    <title>Page 2</title>
+</head>
+<body>
+    <a href="index.html" style="font-size: x-large;">Back To Home</a>
+    <h1><u>Welcome to page #2</u></h1>
+
+    
+    <!-- Button with Javascript Functionality -->
+    <button onclick="doSomething()"  style="font: size 50px; background-color: gray; color: lightblue; border-radius:50px ;">Does Something</button>
+
+    <p id="greeting">Hello</p>
+
+    <script>
+        function doSomething(){
+            document.getElementById("greeting").innerHTML = "Goodbye";
+        }
+    </script>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- Forms -->
+
+    <h3>Forms</h3>
+
+    <form action="index.php" method="post" enctype="multipart/form-data">
+
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter Username" minlength="6" maxlength="10" required>
+
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter Password" minlength="6" maxlength="10" required>
+        
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Email">
+
+        <br>
+
+        <label for="phone">Phone Number</label>
+        <input type="phone" id="phone" placeholder="Enter Phone Number: 07---" pattern="[0-0]{1}[7-7]{1}[0-9]{9}">
+        
+        <br>
+
+        <label for="Birthdate">Birthdate</label>
+        <input type="date" id="birthdate" placeholder="dd/mm/yyyy">
+        <br>
+
+        <label for="quantity">quantity</label>
+        <input type="number" id="quantity" min="0" max="99" value="1">
+        <br>
+        
+        <label for="title">Title:</label>
+
+        <label for="title">Mr</label>
+        <input type="radio" id="Mr" value="Mr" name="title">
+        <label for="title">Mrs</label>
+        <input type="radio" id="Mrs" value="Mrs" name="title">
+        <label for="title">Dr</label>
+        <input type="radio" id="Dr" value="Dr" name="title">
+
+        <br>
+        
+        <label for="payment">Payment</label>
+        <select id="payment">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="giftcard">Giftcard</option>
+        </select>
+
+        <br>
+
+        <label for="subscribe">Subscribe</label>
+        <input type="checkbox" id="subscribe"><br>
+
+        <label for="comment">Comment</label>
+        <textarea id="comment" cols="25" rows="3"></textarea>
+
+        <br>
+
+        <label for="file">File</label>
+        <input type="file" id="file" accept="image/png, audio/mpeg, image/jpeg">
+
+        <br>
+        <input type="reset"><br>
+        <input type="submit">
+
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- Headers and Footers -->
+    <h3>Headers and Footers</h3>
+
+    <header style="background-color: mediumpurple;">
+        <h1>Welcome to Mezzaric's Website</h1>
+        <a href="">Home</a>
+        <a href="">About us</a>
+        <a href="">Products</a>
+        <a href="">Contact us</a>
+        <hr>
+    </header>
+
+    <main>
+        <h4>Check out these cool moves:</h4>
+        <img src="media/Pictures/moving_cube.gif" alt="moving cube gif" height="200px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatibus delectus sit cum quasi eligendi, nobis dolore consequuntur maxime molestias dolores quo impedit numquam eius perspiciatis, totam eum aperiam! Sit!</p>
+    </main>
+
+    <footer style="background-color: mediumpurple;">
+        <hr>
+        Author: Mezzaric<br>
+        &copy; copyright reserved<br>
+        <small><a href="mailto: mezzaricexe@gmail.com">mezzaricexe@gmail.com</a><small>
+    </footer>
+
+    <a href="css_differences.html" style="font-size: x-large;">CSS Differences</a>
+    <br>
+
+    <a href="page_3.html" style="font-size: x-large;">Next Page</a>
+
+</body>
+</html>
